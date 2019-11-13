@@ -76,7 +76,7 @@ public class ChessMatch {
 			throw new ChessException("Você não pode se colocar em XEQUE.");
 		}
 
-		check = ((testCheck(opponent(currentPlayer))) ? true : false);
+		check = (testCheck(opponent(currentPlayer))) ? true : false;
 
 		if (testCheckMate(opponent(currentPlayer))) {
 			checkMate = true;
